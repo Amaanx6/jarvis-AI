@@ -12,52 +12,51 @@ Send Email: Sends an email via Gmail (requires SMTP configuration).
 Prerequisites
 To run the project, you'll need to install the following Python libraries:
 
-bash
-Copy code
+In Terminal{
+
 pip install pyttsx3
 pip install speechRecognition
-pip install wikipedia
+pip install wikipedia }
 You will also need PyAudio for speech recognition:
 
 For Windows:
 Download and install the PyAudio wheel from here.
-
+https://pypi.org/project/PyAudio/
 Once downloaded, install it using:
 
-bash
-Copy code
-pip install <path_to_pyaudio_wheel_file>
-For macOS/Linux:
-bash
-Copy code
-pip install pyaudio
+In Terminal {
+pip install <path_to_pyaudio_wheel_file> }
+
+For macOS/Linux: 
+In Terminal {
+pip install pyaudio }
+
 How to Use
 Clone the repository:
 
-bash
 Copy code
 git clone https://github.com/yourusername/jarvis-assistant.git
 Navigate to the project directory:
 
 bash
-Copy code
+
 cd jarvis-assistant
 Install the required dependencies:
 
-bash
-Copy code
+In Terminal
+
 pip install -r requirements.txt
 Update the sendEmail function with your Gmail credentials:
 
 python
-Copy code
+
 server.login('youremail@gmail.com', 'your-password')
 Note: For security reasons, it's recommended to use environment variables or OAuth for authentication rather than hardcoding your credentials.
 
 Run the script:
 
 bash
-Copy code
+
 python jarvis.py
 Speak to the microphone and give commands like:
 
